@@ -71,7 +71,7 @@ app.get('/weather',(req,res)=> {
                 return res.send({
                     location: place,
                     forecast: summary,
-                    temperature: "The temperature is "+temperature
+                    temperature
                 })
                     
                 

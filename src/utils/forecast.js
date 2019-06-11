@@ -16,7 +16,8 @@ const forecast= (lati,long,callback) => {
         else{
             callback(undefined, {
                 summary:body.daily.data[0].summary,
-                temperature: body.currently.temperature
+                temperature: 'It is currently ' +body.currently.temperature+' degrees out. The high today is '+body.daily.data[0].temperatureHigh +
+                ' degrees & a low of '+body.daily.data[0].temperatureLow+' degrees.'
             })
         }
 
